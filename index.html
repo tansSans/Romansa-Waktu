@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Romansa Waktu - Web Novel</title>
+  <script src="https://unpkg.com/feather-icons"></script>
   <style>
     body {
       font-family: 'Georgia', serif;
@@ -66,7 +67,24 @@
       color: #c59b76;
     }
     ul {
-      padding-left: 20px;
+      padding-left: 40px;
+      list-style: georgian;
+    }
+    ul li {
+      border: 2px solid #333;  
+      border-radius: 8px;      
+      padding: 10px;           
+      margin: 8px 0;               
+    }
+    ul li a:hover {
+      text-decoration: underline;
+    }
+    ul li:hover{
+      color: #e0b88d;
+    }
+    ul a {
+      text-decoration: none;
+      color:white;
     }
     .btn {
       display: inline-block;
@@ -87,6 +105,21 @@
       border: 1px dashed #c59b76;
       background: #111;
       border-radius: 5px;
+    }
+    .p1{
+      border: 2px solid #333;  
+      border-radius: 8px;      
+      padding: 10px;           
+      margin: 8px 0; 
+    }
+
+    .p1 a {
+      text-decoration: none;
+      color: white;
+    }
+    .p1 a:hover{
+      text-decoration: underline;
+      color: #c59b76;
     }
     footer {
       text-align: center;
@@ -155,6 +188,7 @@
       <li><a href="chapter1.html">Chapter 1 - Senin yang tak pernah usai</a></li>
       <li><a href="chapter2.html">Chapter 2 - Bayangan di Balik Waktu</a></li>
       <li><a href="chapter3.html">Chapter 3 - Perkenalan yang tak pernah lengkap</a></li>
+      <li><a href="chapter4.html">Chapter 4 - Mencari Pola</a></li>
     </ul>
   </section>
 
@@ -182,11 +216,11 @@
   <!-- KONTAK -->
   <section id="kontak">
     <h2>Hubungi Penulis</h2>
-    <p>Email: <a href="mailto:rizkyakbarsultan@email.com">rizkyakbarsultan@email.com</a></p>
+    <p class="p1">Email: <a href="mailto:rizkyakbarsultan@email.com">rizkyakbarsultan@email.com</a></p>
     <p>Ikuti saya di media sosial:</p>
     <ul>
-      <li>Instagram :<a href="https://www.instagram.com/tans_sans/">Instagram</a></li>
-      <li>You Tube :<a href="https://www.youtube.com/@SRA-do5ku">You Tube</a></li>
+      <li><i data-feather="instagram"></i><a href="https://www.instagram.com/tans_sans/"> Instagram</a></li>
+      <li><i data-feather="youtube"></i><a href="https://www.youtube.com/@SRA-do5ku"> Youtube</a></li>
     </ul>
   </section>
 
@@ -228,6 +262,9 @@
         });
       });
     </script>
+
+<script>
+  feather.replace();
+</script>
 </body>
 </html>
-
