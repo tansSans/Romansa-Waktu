@@ -223,7 +223,11 @@
       <li><i data-feather="youtube"></i><a href="https://www.youtube.com/@SRA-do5ku"> Youtube</a></li>
     </ul>
   </section>
-
+  
+<section>
+ <div id="disqus_thread"></div>
+</section>
+  
   <footer>
     <p>© 2025 Romansa Waktu</p>
   </footer>
@@ -263,9 +267,24 @@
       });
     </script>
 
+  <script>
+    var disqus_config = function () {
+    this.page.url = https://tanssans.github.io/Romansa-Waktu/;  
+    this.page.identifier = home; 
+    };
+    */
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://romansa-waktu.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
 <script>
   feather.replace();
 </script>
 </body>
 </html>
+
 
