@@ -10,16 +10,51 @@
       font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
-      background: #0f0f0f;
+      background: radial-gradient(ellipse at bottom, #0a0a2a 0%, #000 100%);
       color: #eaeaea;
       line-height: 1.8;
       scroll-behavior: smooth;
     }
+    #stars, #stars2, #stars3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: repeat;
+  background-size: contain;
+  animation: moveStars 200s linear infinite;
+  z-index: 0;
+}
+#stars {
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  animation-duration: 200s;
+}
+#stars2 {
+  background-image: url('https://www.transparenttextures.com/patterns/tiny-crosses.png');
+  animation-duration: 300s;
+  opacity: 0.5;
+}
+#stars3 {
+  background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  animation-duration: 400s;
+  opacity: 0.2;
+}
+/* Gerakan bintang */
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 10000px; }
+}
+@keyframes glow {
+  from { text-shadow: 0 0 10px #a882dd; }
+  to { text-shadow: 0 0 25px #e0b3ff, 0 0 40px #b388ff; }
+}
     header {
       background: linear-gradient(to right, #1a1a1a, #000);
       padding: 30px;
       text-align: center;
       border-bottom: 2px solid #444;
+      position: relative;
     }
     header h1 {
       margin: 0;
@@ -59,6 +94,7 @@
       background: #1a1a1a;
       border-radius: 8px;
       box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      position: relative;
     }
     section h2 {
       color: #c59b76;
@@ -135,6 +171,7 @@
       background: #111;
       color: #777;
       margin-top: 40px;
+      position: relative;
     }
 
     .posts {
@@ -224,6 +261,11 @@ input, textarea, select{
   </style>
 </head>
 <body>
+    <!-- ANIMASI -->
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+
   <header>
     <h1>Romansa Waktu</h1>
     <p>Blog ini adalah tempat web novel yang dibuat oleh siswa SMAN 68 Jakarta, XII-5, Periode 2025/2026, Sultan Rizky Akbar.</p>
@@ -235,9 +277,7 @@ input, textarea, select{
     <a href="#tentang">Tentang</a>
     <a href="#kontak">Kontak</a>
   </nav>
-
-
-
+  
   <!-- BERANDA -->
   <section id="beranda">
     <img src="Gambar/cover.jpeg" width="100%">
@@ -341,6 +381,7 @@ input, textarea, select{
 
 </body>
 </html>
+
 
 
 
